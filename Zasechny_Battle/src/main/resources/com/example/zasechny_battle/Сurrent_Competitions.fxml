@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.zasechny_battle.Controller.Сurrent_Competitions">
+   <children>
+      <ChoiceBox fx:id="Competition" layoutX="394.0" layoutY="24.0" prefWidth="150.0" />
+      <TableView layoutY="167.0" prefHeight="323.0" prefWidth="939.0">
+        <columns>
+          <TableColumn prefWidth="111.99996793270111" text="Фамилия имя" />
+          <TableColumn prefWidth="223.99998474121094" text="1 Круг" />
+            <TableColumn prefWidth="140.0" text="2 Круг" />
+            <TableColumn prefWidth="116.0" text="Штраф" />
+            <TableColumn prefWidth="108.79998779296875" text="Результат" />
+            <TableColumn prefWidth="117.5999755859375" text="Место" />
+            <TableColumn prefWidth="122.4000244140625" text="Разряд" />
+        </columns>
+      </TableView>
+      <ChoiceBox fx:id="Age" layoutX="394.0" layoutY="70.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="Category" layoutX="394.0" layoutY="124.0" prefWidth="150.0" />
+      <Button layoutX="845.0" layoutY="24.0" mnemonicParsing="false" onMouseClicked="#Exit" text="Назад" />
+      <Button layoutX="58.0" layoutY="24.0" mnemonicParsing="false" onMouseClicked="#NewCompetition" text="Создать соревнование" />
+      <Button layoutX="427.0" layoutY="750.0" mnemonicParsing="false" onMouseClicked="#Close" text="Закрыть Соревнования" />
+      <Button layoutX="436.0" layoutY="707.0" mnemonicParsing="false" onMouseClicked="#Add_Participant" text="Добавить участника" />
+   </children>
+</AnchorPane>

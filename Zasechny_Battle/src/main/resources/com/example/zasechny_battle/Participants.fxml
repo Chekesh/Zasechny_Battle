@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1550.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.zasechny_battle.Controller.Participants">
+   <children>
+      <TableView prefHeight="282.0" prefWidth="752.0" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="ID_user" prefWidth="132.0" text="ID_Участника" />
+          <TableColumn prefWidth="67.20001220703125" text="Имя" />
+            <TableColumn prefWidth="75.0" text="Фамилия" />
+            <TableColumn prefWidth="75.0" text="Отчество" />
+            <TableColumn prefWidth="74.39996337890625" text="Номер паспорта" />
+            <TableColumn prefWidth="96.0" text="Серия паспорта" />
+            <TableColumn text="Медицинская справка" />
+            <TableColumn prefWidth="51.199951171875" text="Клуб" />
+            <TableColumn prefWidth="134.4000244140625" text="Дата рождения" />
+        </columns>
+      </TableView>
+      <Accordion layoutY="321.0" prefHeight="176.0" prefWidth="752.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <panes>
+          <TitledPane animated="false" text="Поиск">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </TitledPane>
+          <TitledPane animated="false" text="Добавить">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField layoutX="14.0" layoutY="14.0" promptText="ID_Участника" />
+                        <TextField layoutX="183.0" layoutY="14.0" promptText="Имя" />
+                        <TextField layoutX="349.0" layoutY="14.0" promptText="Фамилия" />
+                        <TextField layoutX="511.0" layoutY="14.0" promptText="Отчество" />
+                        <TextField layoutX="89.0" layoutY="49.0" promptText="Номер паспорта" />
+                        <TextField layoutX="258.0" layoutY="49.0" promptText="Серия паспорта" />
+                        <TextField layoutX="424.0" layoutY="49.0" promptText="Мед справка дата окончания" />
+                        <TextField layoutX="586.0" layoutY="49.0" promptText="Клуб" />
+                        <TextField layoutX="313.0" layoutY="89.0" prefHeight="49.0" prefWidth="144.0" promptText="Дата рождения" AnchorPane.bottomAnchor="25.19999999999999" AnchorPane.leftAnchor="313.0" AnchorPane.rightAnchor="313.20000000000005" AnchorPane.topAnchor="89.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </TitledPane>
+        </panes>
+      </Accordion>
+      <Button fx:id="btn" layoutX="320.0" layoutY="600.0" mnemonicParsing="false" onMouseClicked="#Add_Participant" text="Добавить участника" AnchorPane.leftAnchor="320.0" AnchorPane.rightAnchor="1102.8" AnchorPane.topAnchor="600.0" />
+   </children>
+</AnchorPane>

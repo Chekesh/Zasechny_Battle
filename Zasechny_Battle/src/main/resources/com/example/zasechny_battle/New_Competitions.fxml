@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="432.0" prefWidth="330.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.zasechny_battle.Controller.New_Competitions">
+   <children>
+      <Label layoutX="96.0" layoutY="24.0" text="Создание Соревнований" />
+      <TextField fx:id="place" layoutX="90.0" layoutY="304.0" promptText="Место проведения" />
+      <DatePicker fx:id="date" layoutX="77.0" layoutY="255.0" promptText="Дата проведения" />
+      <ImageView fitHeight="197.0" fitWidth="160.0" layoutX="92.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="135.0" layoutY="347.0" mnemonicParsing="false" onMouseClicked="#Сreate" text="Создать" />
+      <Button layoutX="140.0" layoutY="385.0" mnemonicParsing="false" onMouseClicked="#Exit" text="Назад" />
+   </children>
+</AnchorPane>

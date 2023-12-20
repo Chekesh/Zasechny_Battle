@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1550.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.zasechny_battle.Controller.Competitions">
+   <children>
+      <Label layoutX="483.0" layoutY="34.0" text="Дата проведения:" />
+      <Label fx:id="Text" layoutX="624.0" layoutY="34.0" text="Дата" />
+      <Label layoutX="478.0" layoutY="74.0" text="Место проведения:" />
+      <Label layoutX="619.0" layoutY="74.0" text="Место" />
+      <TableView layoutX="167.0" layoutY="184.0" prefHeight="618.0" prefWidth="1383.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="165.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="180.0">
+        <columns>
+          <TableColumn prefWidth="319.9999694824219" text="Учасник" />
+            <TableColumn prefWidth="192.80001831054688" text="Возростная группа" />
+            <TableColumn prefWidth="199.2000732421875" text="Весовая категория" />
+          <TableColumn prefWidth="119.199951171875" text="Место" />
+            <TableColumn prefWidth="133.5999755859375" text="1 круг" />
+            <TableColumn prefWidth="139.2000732421875" text="2 круг" />
+            <TableColumn prefWidth="167.20001220703125" text="Общий результат" />
+            <TableColumn prefWidth="119.199951171875" text="Разряд" />
+        </columns>
+      </TableView>
+      <ListView prefHeight="800.0" prefWidth="168.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Button layoutX="1429.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#Exit" text="Назад" AnchorPane.bottomAnchor="753.4" AnchorPane.leftAnchor="1429.0" AnchorPane.rightAnchor="72.2" AnchorPane.topAnchor="21.0" />
+   </children>
+</AnchorPane>
